@@ -1,0 +1,32 @@
+{
+  "cli": {
+    "version": ">= 2.1.0",
+    "promptToConfigurePushNotifications": false
+  },
+  "build": {
+    "development": {
+      "developmentClient": true,
+      "distribution": "internal",
+      "env": {
+        "ENTRY_FILE": "./__generated__/AppEntry.js"
+      }
+    },
+    "preview": {
+      "distribution": "internal"
+    },
+    "production": {}
+  },
+  "submit": {
+    "production": {
+      "ios": {
+        "appleId": "appleId",
+        "ascAppId": "ascAppId",
+        "appleTeamId": "appleTeamId"
+      },
+      "android": {
+        "serviceAccountKeyPath": "serviceAccountKeyPath",
+        "track": "internal"
+      }
+    }
+  }
+}
