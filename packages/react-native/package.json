@@ -3,4 +3,11 @@
   "version": "1.0.0",
   "license": "MIT",
   "private": true,
+  "files": [
+    "src"
+  ],
+  "dependencies": {
+    "@trpc/react": "^9.6.0",
+    "@trpc/server": "^9.6.0"
+  }
 }
