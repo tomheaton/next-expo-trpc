@@ -4,12 +4,12 @@ import {StatusBar} from 'expo-status-bar';
 import tw from "@lib/tailwind";
 import {SafeAreaProvider} from "react-native-safe-area-context";
 import {GestureHandlerRootView} from "react-native-gesture-handler";
-import {TestScreen} from "@next-expo-trpc/react-native/src/TestScreen";
+import TestScreen from "@next-expo-trpc/react-native/src/TestScreen";
 import {transformer, trpc} from "@next-expo-trpc/react-native/src/trpc";
 import Constants from 'expo-constants';
 import {QueryClient, QueryClientProvider} from "react-query";
 
-const { manifest } = Constants;
+const {manifest} = Constants;
 
 const localhost = `http://${manifest?.debuggerHost?.split(':').shift()}:3000`;
 
@@ -33,7 +33,7 @@ const App = () => {
                     <GestureHandlerRootView style={tw`flex-1`}>
                         <StatusBar style={"auto"}/>
                         {/*<MainScreen/>*/}
-                        <HelloWorld/>
+                        <TestScreen/>
                     </GestureHandlerRootView>
                 </SafeAreaProvider>
             </QueryClientProvider>
