@@ -1,6 +1,7 @@
 {
-  "name": "@next-expo-trpc/api",
+  "name": "@next-expo-trpc/utils",
   "version": "1.0.0",
+  "author": "tomheaton",
   "license": "MIT",
   "private": true,
   "files": [

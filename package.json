@@ -1,6 +1,7 @@
 {
   "name": "next-expo-trpc",
   "version": "1.0.0",
+  "author": "tomheaton",
   "license": "MIT",
   "private": true,
   "workspaces": {
@@ -8,8 +9,5 @@
       "packages/*",
       "apps/*"
     ]
-  },
-  "scripts": {},
-  "dependencies": {},
-  "devDependencies": {}
+  }
 }

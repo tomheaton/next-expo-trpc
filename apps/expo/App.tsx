@@ -4,10 +4,10 @@ import {StatusBar} from 'expo-status-bar';
 import tw from "@lib/tailwind";
 import {SafeAreaProvider} from "react-native-safe-area-context";
 import {GestureHandlerRootView} from "react-native-gesture-handler";
-import TestScreen from "@next-expo-trpc/react-native/src/TestScreen";
-import {transformer, trpc} from "@next-expo-trpc/react-native/src/trpc";
+import {transformer, trpc} from "@utils/trpc";
 import Constants from 'expo-constants';
 import {QueryClient, QueryClientProvider} from "react-query";
+import MainScreen from "@screens/MainScreen";
 
 const {manifest} = Constants;
 
@@ -18,7 +18,6 @@ const App = () => {
     const [trpcClient] = useState(() =>
         trpc.createClient({
             url: `${localhost}/api/trpc`,
-
             async headers() {
                 return {};
             },
@@ -32,8 +31,7 @@ const App = () => {
                 <SafeAreaProvider>
                     <GestureHandlerRootView style={tw`flex-1`}>
                         <StatusBar style={"auto"}/>
-                        {/*<MainScreen/>*/}
-                        <TestScreen/>
+                        <MainScreen/>
                     </GestureHandlerRootView>
                 </SafeAreaProvider>
             </QueryClientProvider>

@@ -1,19 +1,24 @@
 import React from 'react';
 import {FlatList, SafeAreaView, StyleSheet, Text, TouchableOpacity, View,} from 'react-native';
 import {trpc} from '@next-expo-trpc/react/src/trpc';
+import tw from "./lib/tailwind";
 
 const TestScreen = () => {
     const posts = trpc.useQuery(['post.all'], {
         refetchInterval: 3000
     });
+
     return (
         <SafeAreaView style={styles.container}>
+            <Text style={tw``}>
+                next + expo + trpc
+            </Text>
             {posts.data ? (
                 <FlatList
                     renderItem={({item}) => (
                         <TouchableOpacity
                             onPress={() => {
-                                alert(`You clicked ID ${item.id} `);
+                                alert(`You clicked ID ${item.id}`);
                             }}
                         >
                             <View style={styles.item}>
