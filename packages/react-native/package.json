@@ -6,8 +6,10 @@
   "files": [
     "src"
   ],
+  "scripts": {},
   "dependencies": {
     "@trpc/react": "^9.6.0",
     "@trpc/server": "^9.6.0"
-  }
+  },
+  "devDependencies": {}
 }

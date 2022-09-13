@@ -2,9 +2,8 @@
 const nextConfig = {
     reactStrictMode: true,
     swcMinify: true,
-    externalDir: true,
-    eslint: {
-        ignoreDuringBuilds: true
+    experimental: {
+        externalDir: true
     }
 }
 

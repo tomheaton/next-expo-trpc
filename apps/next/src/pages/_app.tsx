@@ -5,30 +5,13 @@ import {withTRPC} from '@trpc/next';
 import {AppRouter} from '@next-expo-trpc/api/src/routers/_app';
 import {transformer} from '@utils/trpc';
 import {AppProps} from "next/app";
+import {getBaseUrl} from "@utils/index";
 
-const App = ({ Component, pageProps }: AppProps) => {
+const App = ({Component, pageProps}: AppProps) => {
     return (
         <Component {...pageProps} />
     );
 };
-
-const getBaseUrl = (): string => {
-    if (process.browser) {
-        return '';
-    }
-    // reference for vercel.com
-    if (process.env.VERCEL_URL) {
-        return `https://${process.env.VERCEL_URL}`;
-    }
-
-    // reference for render.com
-    // if (process.env.RENDER_INTERNAL_HOSTNAME) {
-    //   return `http://${process.env.RENDER_INTERNAL_HOSTNAME}:${process.env.PORT}`;
-    // }
-
-    // assume localhost
-    return `http://localhost:${process.env.PORT ?? 3000}`;
-}
 
 export default withTRPC<AppRouter>({
     config() {
@@ -69,7 +52,7 @@ export default withTRPC<AppRouter>({
     /**
      * Set headers or status code when doing SSR
      */
-    responseMeta({ clientErrors }) {
+    responseMeta({clientErrors}) {
         if (clientErrors.length) {
             // propagate http first error from API calls
             return {

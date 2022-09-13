@@ -1,1 +1,1 @@
-export * from '@next-expo-trpc/react/src/trpc';
+export * from '@next-expo-trpc/react-native/src/trpc';

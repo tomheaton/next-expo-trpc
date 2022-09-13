@@ -8,5 +8,8 @@
       "packages/*",
       "apps/*"
     ]
-  }
+  },
+  "scripts": {},
+  "dependencies": {},
+  "devDependencies": {}
 }
