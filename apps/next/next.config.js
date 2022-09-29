@@ -1,7 +1,6 @@
 const withTM = require('next-transpile-modules')([
     "@next-expo-trpc/api",
-    "@next-expo-trpc/react",
-    "@next-expo-trpc/utils"
+    "@next-expo-trpc/react"
 ]);
 
 /** @type {import('next').NextConfig} */

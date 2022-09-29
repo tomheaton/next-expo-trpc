@@ -26,9 +26,6 @@
       "@components/*": [
         "src/components/*"
       ],
-      "@server/*": [
-        "src/server/*"
-      ],
       "@styles/*": [
         "src/styles/*"
       ],

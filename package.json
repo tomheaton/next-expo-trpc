@@ -4,10 +4,8 @@
   "author": "tomheaton",
   "license": "MIT",
   "private": true,
-  "workspaces": {
-    "packages": [
-      "packages/*",
-      "apps/*"
-    ]
-  }
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ]
 }
