@@ -1,5 +1,5 @@
 # next-expo-trpc
 
-next + expo + trpc
+Nextjs + Expo + tRPC
 
-[trpc/zart](https://github.com/trpc/zart) but simpler
+Inspired by [trpc/zart](https://github.com/trpc/zart). :bulb:

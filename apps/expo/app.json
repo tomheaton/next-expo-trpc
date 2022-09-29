@@ -1,7 +1,8 @@
 {
   "expo": {
-    "name": "expo",
-    "slug": "expo",
+    "name": "Next Expo tRPC",
+    "slug": "next-expo-trpc",
+    "owner": "tomheaton",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/images/icon.png",
@@ -24,10 +25,17 @@
       "adaptiveIcon": {
         "foregroundImage": "./assets/images/adaptive-icon.png",
         "backgroundColor": "#FFFFFF"
-      }
+      },
+      "package": "dev.tomheaton.monorepotest"
     },
     "web": {
       "favicon": "./assets/images/favicon.png"
+    },
+    "extra": {
+      "apiUrl": "https://next-expo-trpc.tomheaton.dev",
+      "eas": {
+        "projectId": ""
+      }
     }
   }
 }

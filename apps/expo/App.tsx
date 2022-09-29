@@ -1,39 +1,38 @@
-import 'react-native-gesture-handler';
-import React, {useState} from 'react';
-import {StatusBar} from 'expo-status-bar';
+import React, {useState} from "react";
+import {Text, View} from 'react-native';
 import tw from "@lib/tailwind";
-import {SafeAreaProvider} from "react-native-safe-area-context";
-import {GestureHandlerRootView} from "react-native-gesture-handler";
-import {transformer, trpc} from "@utils/trpc";
-import Constants from 'expo-constants';
-import {QueryClient, QueryClientProvider} from "react-query";
-import MainScreen from "@screens/MainScreen";
+import {getBaseUrl, trpc} from "@utils/trpc";
+import {QueryClient, QueryClientProvider} from "@tanstack/react-query";
+import {httpBatchLink} from '@trpc/client';
+import TrpcComponent from "@components/TrpcComponent";
+import superjson from 'superjson';
 
-const {manifest} = Constants;
-
-const localhost = `http://${manifest?.debuggerHost?.split(':').shift()}:3000`;
-
-const App = () => {
+const App: React.FC = () => {
     const [queryClient] = useState(() => new QueryClient());
     const [trpcClient] = useState(() =>
         trpc.createClient({
-            url: `${localhost}/api/trpc`,
-            async headers() {
-                return {};
-            },
-            transformer,
-        }),
+            transformer: superjson,
+            links: [
+                httpBatchLink({
+                    url: `${getBaseUrl()}/api/trpc`,
+                    headers() {
+                        return {};
+                    },
+                }),
+            ],
+        })
     );
 
     return (
         <trpc.Provider client={trpcClient} queryClient={queryClient}>
             <QueryClientProvider client={queryClient}>
-                <SafeAreaProvider>
-                    <GestureHandlerRootView style={tw`flex-1`}>
-                        <StatusBar style={"auto"}/>
-                        <MainScreen/>
-                    </GestureHandlerRootView>
-                </SafeAreaProvider>
+                <View style={tw`flex-1 items-center justify-center`}>
+                    <Text style={tw`font-bold text-5xl`}>
+                        next-expo-trpc
+                    </Text>
+
+                    <TrpcComponent/>
+                </View>
             </QueryClientProvider>
         </trpc.Provider>
     );

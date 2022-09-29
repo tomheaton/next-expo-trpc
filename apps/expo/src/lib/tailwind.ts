@@ -1,3 +1,5 @@
-import tw from "@next-expo-trpc/react-native/src/lib/tailwind";
+import {create} from "twrnc";
+
+const tw = create(require("../../tailwind.config"));
 
 export default tw;
