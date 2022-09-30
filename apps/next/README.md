@@ -1,3 +1,3 @@
-# next-expo-trpc - web
+# next-expo-trpc - next
 
-next-expo-trpc - web
+next-expo-trpc - next

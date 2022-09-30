@@ -1,3 +1,3 @@
-# next-expo-trpc - mobile
+# next-expo-trpc - expo
 
-next-expo-trpc - mobile
+next-expo-trpc - expo
