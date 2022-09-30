@@ -1,6 +1,6 @@
 # next-expo-trpc
 
-Nextjs + Expo + tRPC
+Next.js + Expo + tRPC
 
 Inspired by [trpc/zart](https://github.com/trpc/zart). :bulb:
 
@@ -8,10 +8,10 @@ Inspired by [trpc/zart](https://github.com/trpc/zart). :bulb:
 
 ### apps
 
-| key                   | value  |
-|-----------------------|--------|
-| [`expo`](./apps/expo) | Expo   |
-| [`next`](./apps/next) | Nextjs |
+| key                   | value   |
+|-----------------------|---------|
+| [`expo`](./apps/expo) | Expo    |
+| [`next`](./apps/next) | Next.js |
 
 ### packages
 
