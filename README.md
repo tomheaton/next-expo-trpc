@@ -2,7 +2,7 @@
 
 Next.js + Expo + tRPC
 
-Inspired by [trpc/zart](https://github.com/trpc/zart). :bulb:
+Inspired by [trpc/zart](https://github.com/trpc/zart) and [t3-oss/create-t3-turbo](https://github.com/t3-oss/create-t3-turbo). :bulb:
 
 ## structure
 
