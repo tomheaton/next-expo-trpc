@@ -1,12 +1,12 @@
-const withTM = require('next-transpile-modules')([
-    "@next-expo-trpc/api",
-    "@next-expo-trpc/react"
-]);
-
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-    reactStrictMode: true,
-    swcMinify: true
+  reactStrictMode: true,
+  swcMinify: true,
+  experimental: {
+    transpilePackages: [
+      "@next-expo-trpc/api",
+    ],
+  },
 }
 
-module.exports = withTM(nextConfig);
+module.exports = nextConfig;

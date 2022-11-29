@@ -1,4 +1,8 @@
+node_modules
 .env
 .idea
-node_modules
-
+.DS_Store
+.turbo
+build/**
+dist/**
+.next/**

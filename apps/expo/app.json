@@ -7,6 +7,7 @@
     "orientation": "portrait",
     "icon": "./assets/images/icon.png",
     "userInterfaceStyle": "light",
+    "scheme": "myapp",
     "splash": {
       "image": "./assets/images/splash.png",
       "resizeMode": "contain",
@@ -26,15 +27,12 @@
         "foregroundImage": "./assets/images/adaptive-icon.png",
         "backgroundColor": "#FFFFFF"
       },
-      "package": "dev.tomheaton.monorepotest"
-    },
-    "web": {
-      "favicon": "./assets/images/favicon.png"
+      "package": "dev.tomheaton.nextexpotrpc"
     },
     "extra": {
       "apiUrl": "https://next-expo-trpc.tomheaton.dev",
       "eas": {
-        "projectId": ""
+        "projectId": "0f7107e9-e038-4ccd-8a33-5b688ffddcb7"
       }
     }
   }

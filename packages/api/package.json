@@ -4,11 +4,10 @@
   "author": "tomheaton",
   "license": "MIT",
   "private": true,
-  "files": [
-    "src"
-  ],
+  "main": "./index.ts",
+  "types": "./index.ts",
   "dependencies": {
-    "@trpc/server": "^10.0.0-proxy-beta.7",
+    "@trpc/server": "^10.4.0",
     "superjson": "^1.10.0",
     "zod": "^3.19.1"
   }

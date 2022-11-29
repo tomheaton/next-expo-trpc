@@ -20,17 +20,14 @@
     "incremental": true,
     "baseUrl": ".",
     "paths": {
-      "~/*": [
-        "src/*"
-      ],
       "@components/*": [
-        "src/components/*"
+        "./src/components/*"
       ],
       "@styles/*": [
-        "src/styles/*"
+        "./src/styles/*"
       ],
       "@utils/*": [
-        "src/utils/*"
+        "./src/utils/*"
       ]
     }
   },

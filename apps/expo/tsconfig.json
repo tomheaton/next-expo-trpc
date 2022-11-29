@@ -5,13 +5,10 @@
       "@components/*": [
         "./src/components/*"
       ],
-      "@lib/*": [
-        "./src/lib/*"
-      ],
       "@utils/*": [
         "./src/utils/*"
-      ],
+      ]
     }
   },
-  "extends": "expo/tsconfig.base",
+  "extends": "expo/tsconfig.base"
 }
