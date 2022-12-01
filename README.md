@@ -1,6 +1,6 @@
 # next-expo-trpc
 
-next-expo-trpc
+Next.js + Expo + tRPC
 
 ## structure
 
