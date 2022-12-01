@@ -1,5 +1,6 @@
 {
     "name": "next-expo-trpc",
+    "description": "Next.js + Expo + tRPC",
     "version": "1.0.0",
     "author": "tomheaton",
     "license": "MIT",
